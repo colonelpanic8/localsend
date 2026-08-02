@@ -460,5 +460,17 @@
     "sActionUseCameraHint": "Kamera kullan",
     "sNameDurationLabel": "süre",
     "sUnitAssetCountLabel": "sayım"
+  },
+  "whatsNewPage": {
+    "title": "{version} sürümündeki yenilikler",
+    "changes(interface=WhatsNewStrings)": {
+      "v1_18_0": {
+        "changes": [
+          "Şifreleme artık aktarımları yavaşlatmıyor. Daha önce bu özelliği devre dışı bıraktıysanız, bu aygıtta yeniden etkinleştirildi.",
+          "Favorilerden gelen istekler artık otomatik olarak kabul ediliyor. Bu özellik varsayılan olarak etkindir ve ayarlardan devre dışı bırakılabilir.",
+          "Android'de, uygulama arka planda çalışırken veya ekran kapalıyken aktarımlar devam eder. iOS'ta ise uygulamanın ön planda kalması gerekir."
+        ]
+      }
+    }
   }
 }
