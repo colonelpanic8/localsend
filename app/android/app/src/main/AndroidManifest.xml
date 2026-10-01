@@ -95,6 +95,24 @@
             android:foregroundServiceType="dataSync"
             android:exported="false" />
 
+        <!-- EVA assistant extension: lets the verified EVA app send text to LocalSend favorites. -->
+        <service
+            android:name=".eva.EvaExtensionService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.colonelpanic.eva.action.EXTENSION" />
+            </intent-filter>
+            <meta-data
+                android:name="com.colonelpanic.eva.extension.version"
+                android:value="1" />
+        </service>
+
+        <!-- Keeps an EVA send open while the receiver shows the message. -->
+        <service
+            android:name=".eva.EvaSendService"
+            android:foregroundServiceType="dataSync"
+            android:exported="false" />
+
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

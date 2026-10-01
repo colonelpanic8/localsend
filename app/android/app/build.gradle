@@ -38,6 +38,11 @@ android {
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+    buildFeatures {
+        aidl true
     }
 
     defaultConfig {
@@ -85,6 +90,11 @@ android {
 
 flutter {
     source '../..'
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20250517'
 }
 
 // To comply with F-Droid version code schema
